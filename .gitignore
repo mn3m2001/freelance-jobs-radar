@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Environment Variables & Secrets
+.env
+
+# Runtime Data & Caches (Keep structure, ignore local runs)
+data/history.json
+data/*.log
+
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini

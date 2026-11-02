@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-11-02T18:00:52.204452",
+  "count": 3,
+  "jobs": [
+    {
+      "id": "freelanceyard_mtlob-thlyl-byanat-blgh-python-otnfyth-eda-o-data-cleaning-aal-google-colab",
+      "platform": "freelanceyard",
+      "platform_name": "فريلانس يارد (FreelanceYard)",
+      "title": "⁠مطلوب تحليل بيانات بلغة Python وتنفيذ EDA و Data Cleaning على Google Colab⁠",
+      "url": "https://freelanceyard.com/ar/jobs/mtlob-thlyl-byanat-blgh-python-otnfyth-eda-o-data-cleaning-aal-google-colab",
+      "description": "",
+      "budget": "حسب العرض",
+      "time_posted": "حديثاً",
+      "tags": [],
+      "categories": [
+        "web_scraping",
+        "data_analysis"
+      ],
+      "category_labels": [
+        "Web Scraping (سحب البيانات)",
+        "Data Analysis (تحليل البيانات)"
+      ],
+      "matched_keywords": [
+        "python",
+        "data cleaning",
+        "تحليل بيانات"
+      ],
+      "score": 9
+    },
+    {
+      "id": "freelanceyard_tnthyf-othlyl-byanat-mbyaaat-mtgr-alktrony-dashbord-tfaaaly",
+      "platform": "freelanceyard",
+      "platform_name": "فريلانس يارد (FreelanceYard)",
+      "title": "تنظيف وتحليل بيانات مبيعات متجر إلكتروني + داشبورد تفاعلي",
+      "url": "https://freelanceyard.com/ar/jobs/tnthyf-othlyl-byanat-mbyaaat-mtgr-alktrony-dashbord-tfaaaly",
+      "description": "",
+      "budget": "حسب العرض",
+      "time_posted": "حديثاً",
+      "tags": [],
+      "categories": [
+        "data_analysis",
+        "ecommerce"
+      ],
+      "category_labels": [
+        "Data Analysis (تحليل البيانات)",
+        "E-Commerce Setup (تصميم المتاجر الإلكترونية)"
+      ],
+      "matched_keywords": [
+        "متجر",
+        "متجر إلكتروني",
+        "تحليل بيانات"
+      ],
+      "score": 9
+    },
+    {
+      "id": "freelanceyard_clean-messy-sales-data-build-a-sales-performance-report-excel",
+      "platform": "freelanceyard",
+      "platform_name": "فريلانس يارد (FreelanceYard)",
+      "title": "Clean Messy Sales Data & Build a Sales Performance Report (Excel)",
+      "url": "https://freelanceyard.com/ar/jobs/clean-messy-sales-data-build-a-sales-performance-report-excel",
+      "description": "",
+      "budget": "حسب العرض",
+      "time_posted": "حديثاً",
+      "tags": [],
+      "categories": [
+        "data_analysis"
+      ],
+      "category_labels": [
+        "Data Analysis (تحليل البيانات)"
+      ],
+      "matched_keywords": [
+        "excel"
+      ],
+      "score": 3
+    }
+  ]
+}
