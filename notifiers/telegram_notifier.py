@@ -18,22 +18,30 @@ class TelegramNotifier:
 
         url = f"https://api.telegram.org/bot{self.bot_token}/sendMessage"
         categories_text = ", ".join(job.get("categories", []))
+        project_url = job.get("url", "").strip()
 
         message = (
             f"🎯 <b>فرصة عمل جديدة متطابقة!</b>\n\n"
-            f"📌 <b>العنوان:</b> <a href=\"{job.get('url')}\">{job.get('title')}</a>\n"
+            f"📌 <b>العنوان:</b> {job.get('title')}\n"
             f"🏢 <b>المنصة:</b> {job.get('platform_name')}\n"
             f"🏷 <b>التصنيف:</b> {categories_text}\n"
             f"💰 <b>الميزانية:</b> {job.get('budget', 'غير محدد')}\n"
             f"⏰ <b>الوقت:</b> {job.get('time_posted', 'جديد')}\n\n"
-            f"🔗 <a href=\"{job.get('url')}\">اضغط هنا لفتح المشروع والتقديم فوراً</a>"
+            f"🔗 <b>الرابط المباشر للمشروع:</b>\n{project_url}"
         )
 
         payload = {
             "chat_id": self.chat_id,
             "text": message,
             "parse_mode": "HTML",
-            "disable_web_page_preview": False
+            "disable_web_page_preview": False,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {"text": "🚀 فتح المشروع والتقديم مباشرة", "url": project_url}
+                    ]
+                ]
+            }
         }
 
         try:
