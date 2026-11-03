@@ -165,11 +165,11 @@ Receive instant mobile notifications whenever a matching job drops:
 
 ## ⏰ Automated Scheduling
 
-To automate the radar every 3 hours:
+To automate the radar every 1 hour:
 - **Windows**: Use `Task Scheduler` pointing to `python.exe main.py` in the project directory.
 - **Linux / macOS**: Add a cron entry:
   ```bash
-  0 */3 * * * cd /path/to/freelance-jobs-radar && python3 main.py >> data/cron.log 2>&1
+  0 * * * * cd /path/to/freelance-jobs-radar && python3 main.py >> data/cron.log 2>&1
   ```
 
 ---

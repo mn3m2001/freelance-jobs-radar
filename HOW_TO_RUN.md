@@ -87,12 +87,12 @@ python main.py --platform khamsat
 
 ---
 
-## ⏰ تشغيل الرادار تلقائياً كل 3 ساعات (Automating Execution)
+## ⏰ تشغيل الرادار تلقائياً كل ساعة (Automating Execution)
 
 ### الخيار 1: عبر مجدول مهام ويندوز (Windows Task Scheduler)
 1. افتح قائمة ابدأ واكتب `Task Scheduler`.
 2. اختر `Create Basic Task` وسمّها `Freelance Jobs Radar`.
-3. في خانة `Trigger`: اختر `Daily`، ثم في الخيارات المتقدمة اختر `Repeat task every 3 hours`.
+3. في خانة `Trigger`: اختر `Daily`، ثم في الخيارات المتقدمة اختر `Repeat task every 1 hour`.
 4. في خانة `Action`: اختر `Start a Program`.
    - البرنامج: `python.exe`
    - المعاملات (Arguments): `main.py`
@@ -101,7 +101,7 @@ python main.py --platform khamsat
 ### الخيار 2: عبر أنظمة لينكس أو ماك (Cron Job)
 أضف السطر التالي في `crontab -e`:
 ```bash
-0 */3 * * * cd /path/to/freelance-jobs-radar && python3 main.py >> data/cron.log 2>&1
+0 * * * * cd /path/to/freelance-jobs-radar && python3 main.py >> data/cron.log 2>&1
 ```
 
 ---
